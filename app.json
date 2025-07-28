@@ -1,20 +1,23 @@
 {
-  "name": "𝐀ʟᴏɴᴇ 𝐁ɪᴏ 𝐋ɪɴᴋ",
+  "name": "BioLink",
   "description": "A Telegram bot using Pyrogram",
   "repository": "https://github.com/TeamAloneOp/AloneBioLink",
   "keywords": ["telegram", "bot", "pyrogram"],
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID from my.telegram.org",
-      "required": true
+      "required": true,
+      "value" : "10284859"
     },
     "API_HASH": {
       "description": "Your Telegram API Hash from my.telegram.org",
       "required": true
+      "value" : "b0ad58eb8b845ba0003e0d9ce5fc2196"
     },
     "BOT_TOKEN": {
       "description": "Your Telegram Bot Token from BotFather",
       "required": true
+      "value" : "7992290736:AAGNT441X0menIQ1ZBxc9RjHQHYfEL0Qz2E"
     }
   },
   "buildpacks": [
