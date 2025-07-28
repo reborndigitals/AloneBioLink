@@ -4,6 +4,9 @@
   "logo": "https://envs.sh/IL_.jpg",
   "repository": "https://github.com/reborndigitals/AloneBioLink",
   "keywords": ["telegram", "bot", "pyrogram"],
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ],
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID from my.telegram.org",
@@ -20,8 +23,5 @@
       "required": true,
       "value" : "7992290736:AAGNT441X0menIQ1ZBxc9RjHQHYfEL0Qz2E"
     }
-  },
-  "buildpacks": [
-    { "url": "heroku/python" }
-  ]
+  }
 }
