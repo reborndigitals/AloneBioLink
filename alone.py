@@ -134,4 +134,14 @@ async def callback_handler(client, callback_query):
         await callback_query.answer()
 
 if __name__ == "__main__":
-    app.run()
+    print("𝙷𝚎𝚊𝚛𝚝𝙱𝚎𝚊𝚝 𝚜𝚝𝚊𝚛𝚝𝚒𝚗𝚐...")
+    #app.run()
+app.start()
+except Exception as e:
+        logging.error(f"An unexpected error occurred: {e}")
+        raise
+
+idle()
+    
+    app.stop()
+    print("𝐒𝐭𝐨𝐩𝐩...")
