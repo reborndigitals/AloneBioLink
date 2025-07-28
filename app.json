@@ -21,7 +21,7 @@
     "BOT_TOKEN": {
       "description": "Your Telegram Bot Token from BotFather",
       "required": true,
-      "value" : "7992290736:AAGNT441X0menIQ1ZBxc9RjHQHYfEL0Qz2E"
+      "value" : "8393938399:AAFeJosaqckHB3HCFBF5Ov1pZkZSLwehW6w"
     }
   }
 }
