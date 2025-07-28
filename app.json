@@ -1,6 +1,7 @@
 {
   "name": "BioLink",
   "description": "A Telegram bot using Pyrogram",
+  "logo": "https://envs.sh/IL_.jpg",
   "repository": "https://github.com/reborndigitals/AloneBioLink",
   "keywords": ["telegram", "bot", "pyrogram"],
   "env": {
@@ -11,12 +12,12 @@
     },
     "API_HASH": {
       "description": "Your Telegram API Hash from my.telegram.org",
-      "required": true
+      "required": true,
       "value" : "b0ad58eb8b845ba0003e0d9ce5fc2196"
     },
     "BOT_TOKEN": {
       "description": "Your Telegram Bot Token from BotFather",
-      "required": true
+      "required": true,
       "value" : "7992290736:AAGNT441X0menIQ1ZBxc9RjHQHYfEL0Qz2E"
     }
   },
