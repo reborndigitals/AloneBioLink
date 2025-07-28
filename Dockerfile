@@ -1,11 +1,12 @@
-FROM python-3.11
+FROM python:latest
 
-RUN apt update && apt upgrade -y
-RUN apt install ffmpeg -y
+RUN apt-get update -y && apt-get upgrade -y
 
-RUN mkdir /app/
-COPY . /app
-WORKDIR /app
-RUN pip3 install pip && pip3 install --upgrade pip && pip3 install -U -r requirements.txt
+RUN pip3 install -U pip
+
+COPY . /app/
+WORKDIR /app/
+RUN pip3 install --upgrade pip
+RUN pip3 install
 
 CMD python3 alone.py
