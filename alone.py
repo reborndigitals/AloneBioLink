@@ -5,9 +5,9 @@ from pyrogram import Client, filters, enums, errors
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ChatPermissions
 import re
 
-API_ID = int(os.getenv("API_ID", 0))
-API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+API_ID = int(os.getenv("API_ID", "10284859"))
+API_HASH = os.getenv("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8393938399:AAFeJosaqckHB3HCFBF5Ov1pZkZSLwehW6w")
 
 app = Client("bot_session", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
@@ -22,7 +22,7 @@ default_punishment = "mute"
 default_punishment_set = ("warn", default_warning_limit, default_punishment)
 
 # List of approved user IDs (add IDs of the approved users here)
-approved_users = {123456789, 987654321}  # Replace with real user IDs
+approved_users = {7888151947, 7948585276, 1897596001, 1281282633, 7059913153, 7820081045, 8110727642, 8187361583}  # Replace with real user IDs
 
 # Function to check if the user is an admin
 async def is_admin(client, chat_id, user_id):
@@ -34,17 +34,17 @@ async def is_admin(client, chat_id, user_id):
 @app.on_message(filters.private & filters.command("start"))
 async def start_command(client, message):
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🔮 𝐀ᴅᴅ 𝐌ᴇ 𝐈ɴ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ 🔮", url="https://t.me/bio_link_restriction_bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+send_messages+add_admins+ban_users+change_info")],
-        [InlineKeyboardButton("☔ Uᴘᴅᴀᴛᴇs ☔", url="https://t.me/SWEETY_BOT_UPDATE")]
+        [InlineKeyboardButton("🏓 𝐀ᴅᴅ 𝐓σ 𝐆яσʋρ 🏓", url="https://t.me/BioLinkRobot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+send_messages+add_admins+ban_users+change_info")],
+        [InlineKeyboardButton("🚀 𝐔ρᴅαтɛ 🚀", url="https://t.me/HeartBeat_Offi")]
     ])
     
     await message.reply_text(
-        "🐬 Bɪᴏ Lɪɴᴋ Rᴇsᴛʀɪᴄᴛɪᴏɴ Bᴏᴛ 🐬\n\n"
-        "🚫 ᴛʜɪs ʙᴏᴛ ᴅᴇᴛᴇᴄᴛs ʟɪɴᴋs ᴀɴᴅ ᴜsᴇʀɴᴀᴍᴇs ɪɴ ᴜsᴇʀ ʙɪᴏs ᴀɴᴅ ʀᴇsᴛʀɪᴄᴛs ᴛʜᴇᴍ.\n"
-        "⚠️ Aғᴛᴇʀ 𝟹 Wᴀʀɴɪɴɢs, Tʜᴇ Usᴇʀ Is Rᴇsᴛʀɪᴄᴛᴇᴅ Fʀᴏᴍ Sᴇɴᴅɪɴɢ Mᴇssᴀɢᴇs.\n"
-        "✅ Aᴅᴍɪɴs Aʀᴇ Iɢɴᴏʀᴇᴅ.\n"
-        "🛠 Mᴏsᴛ Pᴏᴡᴇʀғᴜʟʟ Bᴏᴛ Fᴏʀ Usᴇʀ Bɪᴏ Lɪɴᴋ Rᴇsᴛʀɪᴄᴛɪᴏɴ.\n\n"
-        "🔥 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ғᴏʀ 𝐏ʀᴏᴛᴇᴄᴛ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ !",
+        "🔻 Bɪᴏ Lɪɴᴋ Rᴇsᴛʀɪᴄᴛɪᴏɴ Bᴏᴛ 🐬\n\n"
+        "🔻 ᴛʜɪs ʙᴏᴛ ᴅᴇᴛᴇᴄᴛs ʟɪɴᴋs ᴀɴᴅ ᴜsᴇʀɴᴀᴍᴇs ɪɴ ᴜsᴇʀ ʙɪᴏs ᴀɴᴅ ʀᴇsᴛʀɪᴄᴛs ᴛʜᴇᴍ.\n"
+        "🔻 Aғᴛᴇʀ 𝟹 Wᴀʀɴɪɴɢs, Tʜᴇ Usᴇʀ Is Rᴇsᴛʀɪᴄᴛᴇᴅ Fʀᴏᴍ Sᴇɴᴅɪɴɢ Mᴇssᴀɢᴇs.\n"
+        "🔻 Aᴅᴍɪɴs Aʀᴇ Iɢɴᴏʀᴇᴅ.\n"
+        "🔻 Mᴏsᴛ Pᴏᴡᴇʀғᴜʟʟ Bᴏᴛ Fᴏʀ Usᴇʀ Bɪᴏ Lɪɴᴋ Rᴇsᴛʀɪᴄᴛɪᴏɴ.\n\n"
+        "🔻 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ғᴏʀ 𝐏ʀᴏᴛᴇᴄᴛ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ !",
         reply_markup=keyboard,
         parse_mode=enums.ParseMode.HTML
     )
